@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    border: 1px solid black;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: large;
+}
+.sous{
+    display: none;
+}
+.menu:hover .sous{
+    display: block;
+}
+.sous li a{
+    color: orange;
+    font-family: "Goudy Stout";
+    font-style: italic;
+ }
+
+@media screen and (max-width: 600px) {
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
